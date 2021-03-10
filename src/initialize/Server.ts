@@ -1,12 +1,12 @@
+import "reflect-metadata"
 import * as express from "express";
-import "reflect-metadata";
 import { createExpressServer } from "routing-controllers";
 import { server } from "../configs/Index";
 import { SuperLiga } from "../controllers/SuperLiga";
 // import { loadCompression, loadHttpLogger } from "../middlewares";
 
 export class Server {
-  private app!: express.Application;
+  private app: express.Application;
 
   init(): void {
     this.app = createExpressServer({

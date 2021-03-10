@@ -1,4 +1,4 @@
-import { Server } from "./initialize/Index"
+import { Server } from "./src/initialize/Index"
 
 const server = new Server()
 
